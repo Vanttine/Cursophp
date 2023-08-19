@@ -18,7 +18,7 @@
         <?php 
            $nome = $_GET["nome"] ?? "-Cade o nome-";
            $snome = $_GET["sobrenome"] ?? "-Cade o sobrenome-";
-           $mnome = "Vantine";
+           $mnome = "Pereira";
                 
                 print "<p>Prazer em te conhecer, Mas teu nome nao e mais <strong>$nome $snome!</strong> a partir de agora sera $nome $mnome.</p>";
 
