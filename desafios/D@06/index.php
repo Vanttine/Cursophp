@@ -36,13 +36,28 @@
                 $resto = $dividendo % $divisor;
                 $quociente = (int)($dividendo / $divisor);
 
-                    print "<p>Valores: $dividendo  / $divisor.</p>";
+                    //print "<p>Valores: $dividendo  / $divisor.</p>";
 
-                print "<p>Quociente = $quociente</p>";
+                //print "<p>Quociente = $quociente</p>";
 
-                print "<p>Resto = $resto</p>"
+                //print "<p>Resto = $resto</p>
+                
+                ?>
 
-            ?>
+                <table class="divisao">
+
+                    <tr>
+                        <td><?=$dividendo?></td>
+                        <td><?=$divisor?></td>
+                    </tr>
+
+                    <tr>
+                        <td><?=$resto?></td>
+                        <td><?=$quociente?></td>
+                    </tr>
+
+
+                </table>
 
 
         </section>
