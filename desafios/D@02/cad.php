@@ -23,6 +23,7 @@
               print "<h1>Aleatorizando...</h1>";
                 print "<p>Gerando numero entre $n1 e $n2<p/>";
                     print "<strong>$rn</strong>";
+                    
                 ?>
     </main>
 </body>
