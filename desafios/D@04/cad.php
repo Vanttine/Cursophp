@@ -21,7 +21,7 @@
             $dados = json_decode(file_get_contents($url), true);
             $cotacao = $dados["value"][0]["cotacaoCompra"];
 
-            //Inicio da conversao 
+            
             $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
             $real = $_GET["number"] ?? 0;
