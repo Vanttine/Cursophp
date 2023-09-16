@@ -8,6 +8,7 @@
 </head>
 <body> 
             <main>
+                
                 <?php 
 
             $real = $_GET["valor"] ?? 0;
