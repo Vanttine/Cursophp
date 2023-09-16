@@ -21,7 +21,6 @@
 
             echo "<ul><li>A parte inteira e ". number_format($int, 0, ",", ".") ."</li><li>A parte fracionaria e ". number_format($fra, 3, ",", ".") ."</li></ul>";
         ?>
-
         <a href="javascript:history.go(-1)">Voltar para a pagina anterior</a> 
 
     </main>
