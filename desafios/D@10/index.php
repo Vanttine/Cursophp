@@ -9,19 +9,19 @@
 <body>
 
             <?php 
-                //$ano = date("Y");
+                $ano = date("Y");
             ?>
 
     <main>
         
-            <form action="" method="get">
+            <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
                 <h2>Calculando a sua idade</h2>
         
                 <label for="year">Em qual ano voce nasceu?</label>
-                <input type="number" name="year" id="year" min="1650">
+                <input type="number" name="year" id="year" min="1700" max="<?=$ano?>">
         
                 <label for="age">Quer saber sua idade em que ano? (Atualmente estamos em <?=/*$ano*/date("Y")?>)</label>
-                <input type="number" name="age" id="age" min="1650">
+                <input type="number" name="age" id="age" min="1700" max="3000">
 
                 <input type="submit" value="Calcular">
             </form>
@@ -31,8 +31,8 @@
             <section>
 
                 <?php 
-                    $YEAR = $_GET['year'] ?? 2000;
-                    $AGE = $_GET['age'] ?? 2023;
+                    $YEAR = $_GET['year'] ?? '2000';
+                    $AGE = $_GET['age'] ?? $ano;
                     
 
                     $ageclc = $YEAR - $AGE;
